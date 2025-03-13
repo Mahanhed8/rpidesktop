@@ -4,7 +4,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     game.splash("RPI Desktop v2.0.0")
 })
-controller.A.onEvent(ControllerButtonEvent.Released, function () {
+controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
     game.splash(game.ask("Want to update"))
     game.splash("Restart Neaded")
     game.reset()
