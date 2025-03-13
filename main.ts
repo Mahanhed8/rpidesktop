@@ -2,9 +2,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     game.splash(game.ask("Are You Sure To turn Off", "true = please turn off"))
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    game.splash("RPI Desktop v1.0.0")
+    game.splash("RPI Desktop v2.0.0")
 })
-let RPI: Sprite = null
 game.splash("Welcome To The Raspberry Pi Desktop", "desktop.img")
 scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
@@ -128,8 +127,7 @@ scene.setBackgroundImage(img`
     ff222fffffff999fffff55555ffff11f11ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     fff2fffffffff9ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     `)
-controller.moveSprite(RPI, 100, 100)
-RPI = sprites.create(img`
+let RPI = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -147,3 +145,4 @@ RPI = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
+controller.moveSprite(RPI, 100, 100)
