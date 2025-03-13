@@ -2,9 +2,6 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     game.splash(game.ask("Are You Sure To turn Off", "true = please turn off"))
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    game.splash("RPI Desktop v2.0.0")
-})
-controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
     game.splash(game.ask("Want to update"))
     game.splash("Restart Neaded")
     game.reset()
