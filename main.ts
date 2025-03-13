@@ -4,6 +4,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     game.splash("RPI Desktop v1.0.0")
 })
+game.splash("Welcome To The Raspberry Pi Desktop", "desktop.img")
 let RPI = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
