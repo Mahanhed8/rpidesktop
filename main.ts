@@ -1,3 +1,9 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.splash(game.ask("Are You Sure To turn Off", "true = please turn off"))
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    game.splash("RPI Desktop v0.1.0")
+})
 let RPI = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
